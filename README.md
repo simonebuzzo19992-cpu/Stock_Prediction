@@ -11,9 +11,7 @@
   Rather than forecasting price levels — a notoriously noisy regression task — the problem
   is framed as **binary classification**:
 
-  $$y_t = \begin{cases} 1 & \text{if } P_{t+1} > P_t \quad \text{(UP)} 
-  
-  \\ 0 & \text{otherwise} \quad \text{(DOWN)}
+  $$y_t = \begin{cases} 1 & \text{if } P_{t+1} > P_t \quad \text{ (UP) } \\ 0 & \text{otherwise} \quad \text{ (DOWN) }
   \end{cases}$$
 
   A **confidence filter** (threshold > 55%) is applied at inference time to suppress
